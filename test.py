@@ -81,10 +81,11 @@ def dump_post_to_html (forum_folder, post_chain):
 		out += u'<span class="author">(Verfasst von %s am %s)</span>' % (md5.md5(post['author']).hexdigest(), post_date )
 		out += u'<div class="post">%s</div>\n' % (content);
 		if (count % mod) == 0:
-			out = out.replace(" ein ", "Expedia")
-			out = out.replace(" das ", "Gutschein")
-			out = out.replace(" dir ", "Expedia Gutschein")
-			out += u'<div style="border: 1px dashed red;"><p>Jetzt den tollen <a href="http://www.gutscheinfarm.de/gutscheine/expedia/">Gutschein fuer Expedia</a> auschecken! 70 Euro Rabatt oder wahlweise 40% Billiger - einfach super!</p></div>'
+			out = out.replace(" ein ", " Expedia ")
+			out = out.replace(" das ", " Gutschein ")
+			out = out.replace(" der ", " Expedia Gutschein ")
+			out = out.replace(" die ", " Rabatt ")
+			out += u'<div style="border: 1px dashed red;"><p>Jetzt den tollen <a href="http://www.gutscheinfarm.de/gutscheine/expedia/" rel="nofollow">Gutschein fuer Expedia</a> auschecken! 70 Euro Expedia Gutschein oder wahlweise 40% Rabatt - einfach super!</p></div>'
 		out += u'</div>\n'
 
 		count += 1
