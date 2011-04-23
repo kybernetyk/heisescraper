@@ -1,0 +1,39 @@
+body
+{
+	background: #eeeebb;
+}
+
+.postwrap {
+		border: 1px dashed black;
+	width: 728px;
+	background: #eeee77;
+	padding: 10px;
+	margin: 10px;
+	word-wrap: break-word;
+}
+
+.post {
+	/*margin: 10px;
+	padding: 10px;*/
+}
+
+.quote {
+	color:#900;
+	background:#ccc;
+	margin-top: 4px;
+	margin-bottom: 10px;
+	padding: 10px;
+	display: block;
+}
+
+.postheader {
+	font-weight: bold;
+	display: block;
+}
+
+.author {
+	/*text-align: right;
+	padding-left: 20px;*/
+	margin-left: 1em;
+	font-style: italic;
+}
